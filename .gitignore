@@ -1,0 +1,15 @@
+*.swp
+*.swo
+*.swn
+*~
+backend/Gemfile.lock
+backend/coverage
+backend/config.yaml
+backend/consts.yaml
+frontend/.tmp
+frontend/dist
+frontend/node_modules
+frontend/src/bower_components/
+frontend/config.json
+frontend/src/components/app-config/app-config.html
+frontend/src/hangouts.xml

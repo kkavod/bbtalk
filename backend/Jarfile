@@ -1,0 +1,4 @@
+snapshot_repository :snapshots, "http://maven.kurento.org/archiva/repository/snapshots/"
+
+jar 'org.slf4j:slf4j-simple'
+jar 'org.kurento:kurento-client', '6.0.0-SNAPSHOT'

@@ -1,0 +1,18 @@
+require 'yaml'
+require 'rspec/core/rake_task'
+
+require_relative 'app/main'
+
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = 'spec/**/*_spec.rb'
+end
+
+RSpec::Core::RakeTask.new(:coverage) do |spec|
+  spec.pattern = 'spec/**/*_spec.rb'
+end
+
+task :run do
+  exec("bundle exec puma --debug -p 9494")
+end
+
+task :default => :run
